@@ -31,7 +31,7 @@ public class MartialArtApp {
         }
     }
 
-    // 🎲 Rolling Logic
+    // Rolling Logic
     static void rollMenu(List<MartialArt> arts) {
         while (true) {
             var selected = arts.get(rand.nextInt(arts.size()));
@@ -51,7 +51,7 @@ public class MartialArtApp {
         }
     }
 
-    // 📜 History View
+    // History View
     static void viewHistory() {
         System.out.println("\n=== Last 5 Rolls ===");
 
@@ -67,7 +67,7 @@ public class MartialArtApp {
         scanner.nextLine();
     }
 
-    // ⚖️ Weighted Rarity
+    // Weighted Rarity
     static String getWeightedRarity() {
         var roll = rand.nextInt(100);
 
@@ -76,7 +76,7 @@ public class MartialArtApp {
              : "Rare";
     }
 
-    // 🌍 Data Initialization
+    // Data Initialization
     static List<MartialArt> initializeArts() {
         return List.of(
             new MartialArt("Muay Thai", "Striking", "Asia"),
